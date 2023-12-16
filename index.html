@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khabib - System Administrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas></canvas>
+    <main> 
+        <a href="#">
+            <p class="ppp" style="float: left; color:white; font-size:30px; margin-top:35px; margin-left:35px;">
+                <span><b>Khabib</b></span></p>
+        </a>
+        <table class="td">
+            <td><a href="#"><b>Home</b></a></td>
+            <td><a href="#about"><b>About</b></a></td>
+            <td><a href="#skills"><b>Skills</b></a></td>
+            <td><a href="#projects"><b>Projects</b></a></td>
+            <td><a href="#contact"><b>Contact</b></a></td>
+        </table>
+        <button style="float: right;" class="mobile-toggle" onclick="toggleNavbar()">☰</button>
+        <header>
+
+
+            <div class="container">
+                <h1>I am Khabib</h1>
+                <b><span style="font-size: 1.6em; color:rgb(0, 95, 0)" class="typed"
+                        data-typed-items="System Administrator, FrontEnd Developer"></span></b><br><br>
+                <span class="typed" data-typed-items="print('Hello, world!')"></span>
+            </div>
+        </header>
+
+        <section id="about" class="about">
+            <div id="cont">
+                <p><b>Hello, I am Habib.I am a 4-year student at Baku State University-Computer Science.
+                    I took Full-Stack programming training on Udemy.
+                    I studied System Administration course at CodeAcademy.
+                    I have a good grasp of knowledge in IT and am eager to start working in this sphere.
+                    I am looking forward to gain experience and build successful career.I am also Linux(Red Hat)
+                    Administrator.
+                    I have a Comptia A+ certificate. In addition to everything, I am learning CyberSecurity through Kali
+                    Linux right now.</b></p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <a><li>Windows</li></a>
+                    <a><li>Linux</li></a>
+                    <a><li>FrontEnd</li></a>
+                    <a><li>Server</li></a>
+                    <a><li>CompTIA</li></a>
+                    <a><li>ADDS</li></a>
+                    <a><li>DNS</li></a>
+                    <a><li>DHCP</li></a>
+                    <a><li>MS Office</li></a>
+                    <a><li>TCP/ IP</li></a>
+                    <a><li>GPO</li></a>
+                    <a><li>IIS Web Server</li></a>
+                    <a><li>Microsoft Azure</li></a>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project" onmouseover="toggleProjectDescription(this)"
+                    onmouseout="toggleProjectDescription(this)">
+                    <h3>Music Project</h3>
+                    <p class="project-description"><a href="https://aismusic.wuaze.com/" target="_blank"> Ais
+                            Music</a></p>
+                </div>
+                <div class="project" onmouseover="toggleProjectDescription(this)"
+                    onmouseout="toggleProjectDescription(this)">
+                    <h3>To-Do Project</h3>
+                    <p class="project-description"><a href="https://helios21k.github.io/to-do/" target="_blank">To-do</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experince">
+         <div class="container">
+            <h2>Work Experience</h2>
+            <div class="project" onmouseover="toggleProjectDescription(this)"
+                    onmouseout="toggleProjectDescription(this)">
+                    <h3>Rieltor and SMM Manager</h3>
+                    <b><p class="project-description">
+                        <br><span style="color:green">ASFAN home buying and selling company</span><br>
+                        2022(4 months)
+                    </p></b>
+                </div>
+                <div class="project" onmouseover="toggleProjectDescription(this)"
+                    onmouseout="toggleProjectDescription(this)">
+                    <h3>Router Manager</h3>
+                    <b><p class="project-description">
+                        <br><span style="color:green">Azurreo-Monitoring the operation of the router and solving any problems immediately.</span><br>
+                        2023(5 months)
+                    </p></b>
+                </div>
+         </div>
+        </section>
+
+        <section class="education">
+         <div class="container">
+            <h2>Education</h2>
+            <div class="project" onmouseover="toggleProjectDescription(this)"
+                    onmouseout="toggleProjectDescription(this)">
+                    <h3>Computer Science</h3>
+                    <b><p class="project-description">
+                        <br><span style="color:green">Baku State University<br> </span><br>
+                        2020-2024
+                    </p></b>
+                </div>
+                <div class="project" onmouseover="toggleProjectDescription(this)"
+                    onmouseout="toggleProjectDescription(this)">
+                    <h3>System Administration</h3>
+                    <b><p class="project-description">
+                        <br><span style="color:green">CodeAcademy</span><br>
+                        2022-2023
+                    </p></b>
+                </div>
+         </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container" id="grid">
+                <div class="grid-item">
+                    <h2>Contact Me</h2>
+                    <form id="contact-form" onsubmit="submitForm(event)">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+    
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4299.549948018006!2d49.83154075565357!3d40.35918197591176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2saz!4v1699307517419!5m2!1str!2saz" frameborder="0" style="border:0; width: 100%; height: 380px;" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault(); 
+        
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+        
+                if (validateEmail(email)) {
+                    const mailtoLink = `mailto:hebibshahverdiyev@gmail.com?subject=Message from ${name}&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+                    window.location.href = mailtoLink;
+                } else {
+                    alert('Please enter a valid email address');
+                }
+            });
+        
+            function validateEmail(email) {
+                const re = /\S+@\S+\.\S+/;
+                return re.test(email);
+            }
+        </script>
+        <button id="back-to-top" onclick="scrollToTop()"><img src="/images/fafa.png" class="arroww"
+                style="width: 17px; height:20px;"></button>
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 <br> All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
