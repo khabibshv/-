@@ -257,7 +257,7 @@ canvas {
 
 
 
-.button-3 {
+.button3 {
     appearance: none;
     background-color: #4fb919;
     border: 1px solid rgba(27, 31, 35, .15);
@@ -267,7 +267,7 @@ canvas {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -280,35 +280,35 @@ canvas {
     touch-action: manipulation;
     vertical-align: middle;
     white-space: nowrap;
-  }
-  
-  .button-3:focus:not(:focus-visible):not(.focus-visible) {
+}
+
+.button3:focus:not(:focus-visible):not(.focus-visible) {
     box-shadow: none;
     outline: none;
-  }
-  
-  .button-3:hover {
+}
+
+.button3:hover {
     background-color: rgb(0, 95, 0);
-  }
-  
-  .button-3:focus {
+}
+
+.button3:focus {
     box-shadow: rgba(46, 164, 79, 0) 0 0 0 3px;
     outline: none;
-  }
-  
-  .button-3:disabled {
+}
+
+.button3:disabled {
     background-color: #94d3a100;
     border-color: rgba(27, 31, 35, .1);
     color: rgba(255, 255, 255, 0);
     cursor: default;
-  }
-  
-  .button-3:active {
+}
+
+.button3:active {
     background-color: #298e4600;
     box-shadow: rgba(20, 70, 32, 0) 0 1px 0 inset;
-  }
+}
 
-  #demo {
+#demo {
     color: white;
     font-weight: bold;
 }
