@@ -479,3 +479,28 @@ function m( t ) {
 window.onload = function() {
     m( "h1" );
 };
+
+
+
+
+
+
+const lamps=document.querySelectorAll('.lamp');
+const s=document.querySelector('.switch');
+var state=true;
+const colors=['orange', 'red', 'green', 'blue', 'yellow', 'purple'];
+lamps.forEach(function(e, i) {
+  e.style.animationDelay=Math.floor(Math.random()*500) + 'ms';
+  e.style.background=colors[i % colors.length];
+  e.style.marginTop=Math.abs(50*Math.cos(i*12.3*Math.PI/180)) + 'px';
+  e.style.boxShadow='0 0 50px 5px ' + colors[i % colors.length];
+});
+
+s.addEventListener('click', function(e) {
+  state=!state;
+  lamps.forEach(function(e, i) {
+    let lightOrDark = state ? colors[i % colors.length] : '#222';
+    e.style.background = lightOrDark;
+    e.style.boxShadow= state ? ('0 0 50px 5px ' + lightOrDark) : '';
+  });
+});
