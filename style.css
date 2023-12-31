@@ -312,20 +312,32 @@ canvas {
 
 .switch {
     position: fixed;
-    bottom: 0px;
-    left: 1%;
-    bottom: 1%;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    font-family: arial;
-    border-radius: 10px;
-    background: rgb(1, 168, 1);
-    border-radius: 35px;
+            bottom: 0px;
+            left: 1%;
+            bottom: 1%;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            font-family: arial;
+            border-radius: 10px;
+            background: rgb(1, 168, 1);
+            border-radius: 35px;
 }
 
 
 .cable {
     position: fixed;
     top: 0;
+}
+@media only screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    .lamp {
+        height: 15px;
+        width: 15px;
+    }
+
+    .switch {
+        height: 30px;
+        width: 30px;
+    }
 }
